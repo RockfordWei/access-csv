@@ -1,0 +1,7 @@
+gateway:
+    build: ./
+    volumes:
+        - ./:/opt
+        - /tmp:/tmp
+    working_dir: /opt
+    command: /opt/run.sh
